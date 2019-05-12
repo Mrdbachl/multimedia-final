@@ -1,0 +1,126 @@
+header h1{
+  padding-left: 60px;
+  text-decoration: underline blue;
+  color:red;
+}
+.logo{
+  position: fixed;
+  border: thin solid #333;
+  padding-top: 4px;
+  box-sizing: border-box;
+  background-color: #789;
+  color: #FFF;
+  border-radius: 100%;
+  height: 50px; 
+  width: 50px;
+  
+  text-align: center;
+  box-shadow: 5px 5px 5px #aaaaaa;
+  cursor: pointer;
+  transition: background-color .5s ease-in-out;
+  transition: color .5s ease-in-out;
+
+  animation: moveShadow 20s infinite;
+  transition: box-shadow 15s ease-in-out;
+}
+
+.fun{
+  color: #cde;
+  animation-name: best;
+  animation-duration: 30s;
+  animation-iteration-count: 10;
+  text-shadow: 1px 1px 1px black;
+  box-shadow: 2px 2px 4px black;
+  
+}
+
+.typewriter {
+  font-family: monospace;
+  overflow: hidden;
+  border-right: .17em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .12em;
+  animation: typing 6s steps(40), blinking-cursor .5s step-end infinite;
+}
+
+.tigger {
+  text-decoration: line-through;
+}
+
+@keyframes typing {
+  from {width: 0;}
+  to {width: 100%;}
+}
+
+@keyframes blinking-cursor {
+  from, to {border-color: transparent;}
+  50% {border-color: orange;}
+}
+
+@keyframes best {
+  0% {color: #cde;}
+  
+  25% {color: green;}
+  
+  50% {color: yellow;}
+  
+  75% {color: blue;}
+  
+  100% {color: orange;}
+}
+
+@keyframes moveShadow {
+  0%{
+
+  }
+  25% {
+    box-shadow: -3px 3px 5px rgb(0,255,0);
+  }
+  50% {
+    box-shadow: -3px -3px 5px rgb(255,0,0);
+  }
+  50% {
+    box-shadow: 3px -3px 5px rgb(0,0,255);
+  }
+  100% {
+    
+  }
+}
+
+
+@keyframes pulser {
+  0% {
+    box-sizing: unset;
+  }
+  75% {
+    padding: 10px;
+    margin:-5px;
+    box-sizing: unset;
+  }
+  100% {
+    box-sizing: unset;
+  }
+}
+
+@keyframes spinLogo {
+  0%{
+    
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes fontbulger {
+  0% {
+    font-size: 10px;
+  }
+  30% {
+    font-size: 15px;
+  }
+  100% {
+    font-size: 12px;
+  }
+}
+
